@@ -1,0 +1,18 @@
+<jsonforms
+  *ngIf="schema && uischema"
+  [data]="data"
+  [schema]="schema"
+  [uischema]="uischema"
+  [renderers]="renderers"
+  (dataChange)="onDataChanged($event)"
+>
+</jsonforms>
+
+<br>
+
+@if (debug) {
+  <p>DEBUG:</p>
+  <pre>{{ data | json }}</pre>
+}
+
+<button mat-raised-button (click)="onSubmit()">Envoyer le formulaire</button>

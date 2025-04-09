@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  gap: 8rem;
+  text-align: center;
+}
+
+.mid-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mid-container p {
+  text-space: 1rem;
+}
+

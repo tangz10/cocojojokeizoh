@@ -1,0 +1,27 @@
+
+
+<div class="main-container">
+
+  <div class="top-container">
+    <img src="/assets/logo-socram.png" alt="">
+  </div>
+
+  <div class="mid-container">
+    <h4>Bienvenue dans le formulaire de déclaration d'incident DORA</h4>
+
+    <p>Vous souhaitez ?</p>
+
+    <div class="button-container">
+      <button routerLink="/main"  mat-flat-button style="background: lightgreen">Remplir une nouvelle déclaration</button>
+
+      <button type="button" mat-flat-button (click)="fileInput.click()">Import un schema existant</button>
+      <input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file" accept=".json">
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
